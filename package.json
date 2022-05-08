@@ -1,7 +1,7 @@
 {
   "name": "assign-random-reviewer",
   "version": "1.0.0",
-  "description": "",
+  "description": "지정된 그룹에서 무작위로 멤버를 골라 Review 로 지정합니다.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
