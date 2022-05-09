@@ -1,0 +1,28 @@
+name: 'Assign Random Reviewer'
+description: 'Pick member randomly from pre-defined group and assign as reviewer.'
+inputs:
+  github-token:
+    description: 'GitHub PAT (Personal Access Token)'
+    required: true
+  target-organization-name:
+    description: 'Target organization name'
+    required: true
+  target-team-name:
+    description: 'Target team name associated with organization'
+    required: true
+  pr-repo-owner:
+    description: 'Owner name of associated PR'
+    required: true
+  pr-repo-name:
+    description: 'Repository name of associated PR'
+    required: true
+  pr-number:
+    description: 'Number of associated PR'
+    required: true
+  pr-author:
+    description: 'Author name of associated PR'
+    required: true
+outputs: {}
+runs:
+  using: node16
+  main: dist/main/index.js

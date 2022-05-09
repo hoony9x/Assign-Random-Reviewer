@@ -1,10 +1,11 @@
 {
   "name": "assign-random-reviewer",
   "version": "1.0.0",
-  "description": "지정된 그룹에서 무작위로 멤버를 골라 Review 로 지정합니다.",
-  "main": "index.js",
+  "description": "Pick member randomly from pre-defined group and assign as reviewer.",
+  "main": "src/main.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "ncc build src/main.ts --out dist/main --source-map --minify",
+    "clean": "rm -rf dist"
   },
   "keywords": [],
   "author": {
